@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+      get 'waypoints/index'
+      get 'waypoints/show'
+      post '/gps', to: 'waypoints#gps'
+    end
+  end
 end
