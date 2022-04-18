@@ -2,7 +2,7 @@
 Api project allows you to store waypoints.
 
 * for add waiypoints use endpoint /api/v1/gps
-format :
+* format :
   ``` json
   {
     "latitude": 20.23,
